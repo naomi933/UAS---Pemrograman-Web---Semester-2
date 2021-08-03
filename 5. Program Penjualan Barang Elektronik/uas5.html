@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Program Penjualan Barang Elektronik</title>
+</head>
+
+
+<!--JavaScript-->
+    <script type="text/javascript" language="javascript" src="uas5.js">
+    </script>
+
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<body>
+<nav class="navbar navbar-light bg-light">
+  <div class="container">
+    <a href="uas1.html" class="nav-link">Program Penjualan Barang</a>
+    <a href="uas2.html" class="nav-link">Program Penggajian Pegawai</a>
+    <a href="uas3.html" class="nav-link">Form Pembelian Barang</a>
+    <a href="uas4.html" class="nav-link">Form Pembelian Barang(Member)</a>
+    <a href="uas5.html" class="nav-link">Program Penjualan Barang Elektronik</a>
+    <a href="uas6.html" class="nav-link">Program Penjualan Motor</a>
+    <a href="uas7.html" class="nav-link">Program Tagihan Listrik</a>
+    <a href="uas8.html" class="nav-link">Program Kredit Rumah</a>
+  </div>
+</nav>
+<form name="table">
+    <center>
+    <table width="50%" border="2" bgcolor="#e1e1d0">
+        <thead align="center">
+            <td colspan="2"><h2>Formulir Penjualan Barang</h2></td>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nama Pembeli / Customer</td>
+                <td><input type="text" name="nama" class="form-control" style="width: 98%"></td>
+            </tr>
+            <tr>
+                <td>Nama Barang Penjualan</td>
+                <td>
+                    <input type="radio" name="pilih" onclick="checkbox ()">Monitor
+                    <input type="radio" name="pilih" onclick="checkbox ()">CPU
+                    <input type="radio" name="pilih" onclick="checkbox ()">VGA
+                </td>
+            </tr>
+            <tr>
+                <td>Jumlah Barang</td>
+                <td><input type="text" name="jumlah" class="form-control" style="width: 98%"></td>
+            </tr>
+            <tr>
+                <td>Harga Barang</td>
+                <td><input type="text" name="harga" class="form-control" style="width: 70%" value="" disabled></td>
+            </tr>
+            <tr>
+                <td>Sub Total Barang</td>
+                <td><input type="text" name="subtotal" class="form-control" style="width: 70%" value="" disabled></td>
+            </tr>
+            <tr>
+                <td>Pajak 10%</td>
+                <td><input type="text" name="pajak" class="form-control" style="width: 70%" value="" disabled></td>
+            </tr>
+            <tr>
+                <td>Total Bayar</td>
+                <td><input type="text" name="totalbayar" class="form-control" style="width: 70%" value="" disabled></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <br> 
+                    <input type="button" value="Hitung" style="height: 50px; width: 100px;" onclick="hitung ()">
+                    <input type="reset"  value="Reset"  style="height: 50px; width: 100px;">
+                    <br><br>
+                </td>
+            </tr>
+        </tbody>
+    </center>
+    </table>
+</form>
+</body>
+</html>

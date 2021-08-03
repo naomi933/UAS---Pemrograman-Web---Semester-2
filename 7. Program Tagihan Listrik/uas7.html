@@ -1,0 +1,144 @@
+<!doctype html>
+    <html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Program Tagihan Listrik</title>
+    </head>
+
+    <!--JavaScript-->
+    <script language="javascript" src="uas7.js"></script>
+    <!--End JavaScript-->
+
+
+<style>
+body {
+    font-family: century gothic;
+}
+.header a {
+    text-decoration: none;
+    color: blue;
+    display: inline-block;
+    padding: 20px;
+}
+.container {
+    width: 500px;
+    border: 2px solid black;
+    background-color: #e1e1d0;
+    padding: 40px;
+    text-align: center;
+}
+.container .table1 {
+    border-collapse: collapse;
+}
+.container .table1 tr td {
+    text-align: left;
+    border: 1px solid #999;
+    padding: 8px 20px;
+}
+.container .table1 input {
+    height: 35px;
+    width: 250px;
+}
+.container .table1 .btn {
+    background-color: black;
+}
+.container select {
+    height: 35px;
+    width: 100%;
+}
+</style>
+<body>
+
+    <!--Link-->
+    <nav class="navbar navbar-light bg-light">
+        <div class="header">
+             <a href="uas1.html" class="nav-link">Program Penjualan Barang</a>
+                <a href="uas2.html" class="nav-link">Program Penggajian Pegawai</a>
+                <a href="uas3.html" class="nav-link">Form Pembelian Barang</a>
+                <a href="uas4.html" class="nav-link">Form Pembelian Barang(Member)</a>
+                <a href="uas5.html" class="nav-link">Program Penjualan Barang Elektronik</a>
+                <a href="uas6.html" class="nav-link">Program Penjualan Motor</a>
+                <a href="uas7.html" class="nav-link">Program Tagihan Listrik</a>
+                <a href="uas8.html" class="nav-link">Program Kredit Rumah</a>
+        </div>
+    </nav>
+    <!--End Link-->
+
+    <form action="">
+        <div class="container">
+            <h1>Menghitung Tagihan</h1>
+            <h1>Listrik PLN Bandung</h1>
+            <table class="table1">
+                <tr>
+                    <td>Nama pelanggan</td>
+                    <td>:</td>
+                    <td>
+                        <input class="col-sm-12" id="Nama" type="text" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kategori</td>
+                    <td>:</td>
+                    <td>
+                        <select name="kategori" id="kategori" class="col-sm-12 form-select-sm">
+                            <option selected>Pilih Kategori</option>
+                            <option name="kategori" value="sosial">Sosial</option>
+                            <option name="kategori" value="rumah">Rumah</option>
+                            <option name="kategori" value="industri">Industri</option>
+                        </select>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Jumlah Pemakaian Listrik</td>
+                    <td>:</td>
+                    <td>
+                        <input class="col-sm-12" id="jumlah" type="text">
+                    </td>
+                </tr>
+            </table>
+            <br>            
+            <hr>
+            <br>
+
+            <h4><b>Rincian Tagihan</b></h4>
+            <table cellpadding="7">
+                <tr>
+                    <td>Jumlah</td>
+                    <td>Tarif per KWh</td>
+                    <td>Abodemen</td>
+                    <td>Sub Total</td>
+                </tr>
+                <tr>
+                    <td id="outjumlah"></td>
+                    <td id="outTarif"></td>
+                    <td id="outAbodemen"></td>
+                    <td id="outSubtotal"></td>
+                </tr>
+            </table>
+            <table cellpadding="5">
+                <tr>
+                    <td>Subtotal</td>
+                    <td>:</td>
+                    <td id="outputTotal"></td>
+                </tr>
+                <tr>
+                    <td>Pajak</td>
+                    <td>:</td>
+                    <td id="outputPajak"></td>
+                </tr>
+                <tr>
+                    <td>Bayar</td>
+                    <td>:</td>
+                    <td id="outputBayar"></td>
+                </tr>
+            </table>
+            <input type="button" value="Proses" onclick="proses ()">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+</html>

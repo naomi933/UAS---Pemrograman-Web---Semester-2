@@ -1,0 +1,108 @@
+  
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Program Kredit Rumah</title>
+
+<!--JavaScript-->
+<script type="text/javascript" src="uas8.js"></script>
+
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+
+<nav class="navbar navbar-light bg-light">
+  <div class="container">
+    <a href="uas1.html" class="nav-link">Program Penjualan Barang</a>
+    <a href="uas2.html" class="nav-link">Program Penggajian Pegawai</a>
+    <a href="uas3.html" class="nav-link">Form Pembelian Barang</a>
+    <a href="uas4.html" class="nav-link">Form Pembelian Barang(Member)</a>
+    <a href="uas5.html" class="nav-link">Program Penjualan Barang Elektronik</a>
+    <a href="uas6.html" class="nav-link">Program Penjualan Motor</a>
+    <a href="uas7.html" class="nav-link">Program Tagihan Listrik</a>
+    <a href="uas8.html" class="nav-link">Program Kredit Rumah</a>
+  </div>
+</nav>
+</head>
+
+
+<body>
+  <center>
+  <form name="isiform" id="isiform">
+    <div class="container">
+      <table width="50%" border="2" bgcolor="#e1e1d0">
+      <h2>PROGRAM KREDIT RUMAH</h2>
+      <hr>
+        <tr>
+          <td width="140px">Type Rumah</td>
+          <td align="left">
+            <select name="kategori" id="kategori" onchange="pilih ()">
+              <option disabled="">Pilihan Type Rumah</option>
+              <option value="almanda">Almanda</option>
+              <option value="mawar">Mawar</option>
+            </select></td>
+          </tr>
+          <tr>
+            <td>Lama Kredit</td>
+            <td align="left"><input type="text" id="lamakreditinput"></td>
+          </tr>
+        </table>
+        <hr>
+        <div class="tombol">
+          <input type="button" value="Proses" onclick="proses ()">
+          <input type="reset" value="Reset">
+        </div>
+        <div class="info">
+          <label>==============================================================</label>
+          <h3>Harga Rumah</h3>
+          <p>
+            Type Almanda = 120000000<br>
+            Type Mawar   = 130000000<br>
+            Uang muka sebesar 20% dari total harga rumah
+          </p>
+        <label>==============================================================</label>
+        </div>
+      </div>
+      <div class="bottomtable">
+        <table width="50%" border="2" bgcolor="#e1e1d0">
+        <label for=""><h2>Program Kredit Rumah</label></h2>
+          <tr>
+            <td width="150px">Type Rumah</td>
+            <td width="20px">=</td>
+            <td><div id="namarumah"></div></td>
+          </tr>
+          <tr>
+            <td>Harga Rumah</td>
+            <td>=</td>
+            <td><input type="text" name="hargarumah" id="hargarumah" value="" disabled></div></td>
+          </tr>
+          <tr>
+            <td>Uang Muka</td>
+            <td>=</td>
+            <td><input type="text" name="uangmuka" id="uangmuka" value="" disabled></td>
+          </tr>
+          <tr>
+            <td>Sisa</td>
+            <td>=</td>
+            <td><input type="text" name="sisa" id="sisa" value="" disabled></td>
+          </tr>
+          <tr>
+            <td>Lama Kredit</td>
+            <td>=</td>
+            <td><input type="text" id="lamakreditoutput" value="" disabled size="3">&nbsp;Bulan</td>
+          </tr>
+          <tr>
+            <td>Angsuran</td>
+            <td>=</td>
+            <td><input type="text" id="angsuran" name="angsuran" value="" disabled></td>
+          </tr>
+        </table>
+        <div class="table2">
+            <textarea name="ohasil" rows="15" cols="70">Rincian Kredit Perbulan</textarea>
+        </div>
+      </div>
+    </form>
+  </body>
+</center>
+  </html>
